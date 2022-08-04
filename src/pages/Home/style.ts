@@ -76,6 +76,14 @@ export const Button = styled.button`
   }
 `
 
+export const StopButton = styled(Button)`
+  background: ${({ theme }) => theme['red-500']};
+
+  &:not(:disabled):hover {
+    background: ${({ theme }) => theme['red-700']};
+  }
+`
+
 const BaseInput = styled.input`
   background: transparent;
   height: 2.5rem;
